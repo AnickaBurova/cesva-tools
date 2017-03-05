@@ -1,4 +1,4 @@
-module Lib where
+module Lib (convertNoise) where
 
 import qualified Data.List as L
 import Data.DList
