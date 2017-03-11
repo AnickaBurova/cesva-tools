@@ -45,7 +45,7 @@ type Item = ((Maybe (String -> Tag), Maybe (Float -> Tag)), DList Tag)
 decode :: Item -> String -> Item
 decode (_,res) "t"      = ((Just Time,Nothing)  , res)
 decode (_,res) "LC1\""  = ((Nothing,Just LC1   ), res)
-decode (_,res) "LA1\""    = ((Nothing,Just LA1   ), res)
+decode (_,res) "LA1\""  = ((Nothing,Just LA1   ), res)
 decode (_,res) "LCpeak" = ((Nothing,Just LCpeak), res)
 decode (_,res) "LCt"    = ((Nothing,Just LCt   ), res)
 decode (_,res) "LAt"    = ((Nothing,Just LAt   ), res)
